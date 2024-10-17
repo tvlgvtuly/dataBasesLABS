@@ -65,7 +65,7 @@ check ( country_of_citizenship = 'Kazakhstan' and age(date_of_birth) >= interval
         country_of_citizenship = 'France' and age(date_of_birth) >= interval '17 years' or
         country_of_citizenship not in ('France', 'Kazakhstan') and age(date_of_birth) >= interval '19 years')
 not valid;
-
+--8 task
 alter table booking
 add column ticket_discount decimal;
 
