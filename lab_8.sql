@@ -40,7 +40,7 @@ create view passenger_Leffler_Thompson as
 select first_name, last_name, country_of_citizenship
 from passengers
 join booking on passengers.passenger_id = booking.passenger_id
-where booking_platform = 'Leffler-Thompson'
+where booking_platform = 'Leffler-Thompson';
 
 create view most_visited_countries as
 select country, count(*) as visit_count
